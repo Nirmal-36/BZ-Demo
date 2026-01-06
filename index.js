@@ -5,7 +5,7 @@ const app = express();
 const PORT = 3000;
 
 app.get('/', (req, res) => {
-    console.log(req.query.s1, req.query.s2);
+    // console.log(req.query.s1, req.query.s2);
     res.send('Welcome to the homepage!');
 });
 
