@@ -39,10 +39,10 @@ export const getSubsetSum = ((req, res) => {
     const {A, sum} = req.query;
     const ans = subsetSum(A, A.length, sum);
     if(ans === 1) {
-        res.send("True");
+        res.send("Subset with given sum exists");
     }
     else {
-        res.send("False");
+        res.send("Subset with given sum does not exist");
     }
 })
 
